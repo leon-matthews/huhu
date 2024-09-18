@@ -12,7 +12,7 @@ import re
 
 
 APACHE_LOG_DIRECTIVES = {
-    '%a': 'remote_ip_address',
+    '%a': 'remote_ip_address',      # IPv6 ([a-f0-9:]+:+)+[a-f0-9]+
     '%A': 'local_ip_address',
     '%b': 'response_size',          # Bytes excluding headers, CLF format
     '%B': 'response_size',          # Bytes excluding headers
